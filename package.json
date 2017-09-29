@@ -1,0 +1,42 @@
+{
+    "name": "meetyou-angular-ui-uirecorder",
+    "version": "1.0.0",
+    "description": "test case recorder",
+    "main": "index.js",
+    "scripts": {
+        "installdriver": "./node_modules/.bin/selenium-standalone install --drivers.firefox.baseURL=http://npm.taobao.org/mirrors/geckodriver --baseURL=http://npm.taobao.org/mirrors/selenium --drivers.chrome.baseURL=http://npm.taobao.org/mirrors/chromedriver --drivers.ie.baseURL=http://npm.taobao.org/mirrors/selenium",
+        "server": "./node_modules/.bin/selenium-standalone start",
+        "test": "./node_modules/.bin/mocha \"*/**/*.spec.js\" --reporter mochawesome-uirecorder",
+        "singletest": "./node_modules/.bin/mocha --reporter mochawesome-uirecorder",
+        "paralleltest": "./node_modules/.bin/mocha-parallel-tests \"*/**/*.spec.js\" --reporter mochawesome-uirecorder --max-parallel 5",
+
+        "recorder:menu": "uirecorder sample/menu.spec.js",
+        "test:menu": "source run.sh sample/menu.spec.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/youpinyao/meetyou-angular-ui-uirecorder.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/youpinyao/meetyou-angular-ui-uirecorder/issues"
+    },
+    "homepage": "https://github.com/youpinyao/meetyou-angular-ui-uirecorder#readme",
+    "engines": {
+        "node": "> 7.0.0"
+    },
+    "dependencies": {
+        "chai": "3.5.0",
+        "jwebdriver": "2.2.4",
+        "mocha": "3.1.2",
+        "mocha-parallel-tests": "1.2.4",
+        "mochawesome-uirecorder": "1.5.21",
+        "resemblejs-node": "1.0.0",
+        "selenium-standalone": "6.x.x"
+    },
+    "devDependencies": {
+        "mocha": "3.5.3",
+        "uirecorder": "2.5.33"
+    }
+}
