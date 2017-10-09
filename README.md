@@ -31,4 +31,4 @@ source run.sh sample/menu.spec.js
 
 ```
 
-### datepicer tooltip form 无法录制(uirecorder 不支持)
+### datepicker tooltip form 无法录制(uirecorder 不支持)
