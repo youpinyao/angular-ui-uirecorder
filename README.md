@@ -13,15 +13,21 @@ test case recorder
 #### 1. npm i
 #### 2. npm run installdriver
 #### 3. 新增录制项
-#### 4. 跑测试的时候必须启动server，npm run server
 在package.json 新增 scripts
 
 ```
 范例：
 
-// 录制
+// 录制scripts
 "recorder:menu": "uirecorder sample/menu.spec.js"
 
-// 录制后跑测试
+// 测试scripts
 "test:menu": "source run.sh sample/menu.spec.js"
+
+// 录制
+npm run recorder:menu
+
+// 测试
+npm run server
+npm run test:menu
 ```
