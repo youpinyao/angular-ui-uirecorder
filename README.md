@@ -11,8 +11,9 @@ test case recorder
 ### 录制
 
 #### 1. npm i
-#### 2. npm run installdriver 
+#### 2. npm run installdriver
 #### 3. 新增录制项
+#### 4. 跑测试的时候必须启动server，npm run server
 在package.json 新增 scripts
 
 ```
