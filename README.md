@@ -21,16 +21,12 @@ node 版本必须>= 7.0
 ```
 范例：
 
-// 录制scripts
-"recorder:menu": "uirecorder sample/menu.spec.js"
-
-// 测试scripts
-"test:menu": "source run.sh sample/menu.spec.js"
-
 // 录制
-npm run recorder:menu
+npm run recorder sample/menu.spec.js
 
 // 测试
 npm run server
-npm run test:menu
+
+source run.sh sample/menu.spec.js
+
 ```

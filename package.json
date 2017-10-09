@@ -10,12 +10,7 @@
         "singletest": "./node_modules/.bin/mocha --reporter mochawesome-uirecorder",
         "paralleltest": "./node_modules/.bin/mocha-parallel-tests \"*/**/*.spec.js\" --reporter mochawesome-uirecorder --max-parallel 5",
 
-        "recorder:menu": "uirecorder sample/menu.spec.js",
-        "test:menu": "source run.sh sample/menu.spec.js",
-
-        "recorder:icon": "uirecorder sample/icon.spec.js",
-        "test:icon": "source run.sh sample/icon.spec.js",
-        "space": ""
+        "recorder": "node recorder"
     },
     "repository": {
         "type": "git",
@@ -40,6 +35,7 @@
         "selenium-standalone": "6.x.x"
     },
     "devDependencies": {
+        "commander": "2.11.0",
         "mocha": "3.5.3",
         "uirecorder": "2.5.33"
     }
