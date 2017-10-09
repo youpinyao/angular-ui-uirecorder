@@ -11,7 +11,11 @@
         "paralleltest": "./node_modules/.bin/mocha-parallel-tests \"*/**/*.spec.js\" --reporter mochawesome-uirecorder --max-parallel 5",
 
         "recorder:menu": "uirecorder sample/menu.spec.js",
-        "test:menu": "source run.sh sample/menu.spec.js"
+        "test:menu": "source run.sh sample/menu.spec.js",
+
+        "recorder:icon": "uirecorder sample/icon.spec.js",
+        "test:icon": "source run.sh sample/icon.spec.js",
+        "space": ""
     },
     "repository": {
         "type": "git",
