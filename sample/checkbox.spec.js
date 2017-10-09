@@ -21,8 +21,8 @@ module.exports = function(){
         testVars = self.testVars;
     });
 
-    it('url: http://0.0.0.0:8686/#!/components/feedback/alert', async function(){
-        await driver.url(_(`http://0.0.0.0:8686/#!/components/feedback/alert`));
+    it('url: http://0.0.0.0:8686/#!/components/data-entry/checkbox', async function(){
+        await driver.url(_(`http://0.0.0.0:8686/#!/components/data-entry/checkbox`));
     });
 
     it('waitBody: ', async function(){
@@ -31,68 +31,59 @@ module.exports = function(){
         });
     });
 
-    it('scrollTo: 0, 142', async function(){
-        await driver.scrollTo(0, 142);
+    it('click: Toggle disabled fals... ( div.ma-button, 86, 5, 0 )', async function(){
+        await driver.sleep(300).wait('div.ma-button', 30000)
+               .sleep(300).mouseMove(86, 5).click(0);
     });
 
-    it('click: div.ma-alert-warning > i.icon-close, 9, 4, 0', async function(){
-        await driver.sleep(300).wait('div.ma-alert-warning > i.icon-close', 30000)
-               .sleep(300).mouseMove(9, 4).click(0);
+    it('click: Toggle disabled true... ( div.ma-button, 91, 14, 0 )', async function(){
+        await driver.sleep(300).wait('div.ma-button', 30000)
+               .sleep(300).mouseMove(91, 14).click(0);
     });
 
-    it('scrollTo: 0, 89', async function(){
-        await driver.scrollTo(0, 89);
+    it('click: 选择2 ( //span[text()="选择2"], 10, 7, 0 )', async function(){
+        await driver.sleep(300).wait('//span[text()="选择2"]', 30000)
+               .sleep(300).mouseMove(10, 7).click(0);
     });
 
-    it('click: i.icon-close, 9, 11, 0', async function(){
-        await driver.sleep(300).wait('i.icon-close', 30000)
-               .sleep(300).mouseMove(9, 11).click(0);
+    it('click: 选择3 ( //span[text()="选择3"], 9, 13, 0 )', async function(){
+        await driver.sleep(300).wait('//span[text()="选择3"]', 30000)
+               .sleep(300).mouseMove(9, 13).click(0);
     });
 
-    it('scrollTo: 0, 29', async function(){
-        await driver.scrollTo(0, 29);
+    it('click: 选择3 ( //span[text()="选择3"], 9, 13, 0 )', async function(){
+        await driver.sleep(300).wait('//span[text()="选择3"]', 30000)
+               .sleep(300).mouseMove(9, 13).click(0);
     });
 
-    it('click: 新增 ( //div[text()="新增"], 61, 17, 0 )', async function(){
-        await driver.sleep(300).wait('//div[text()="新增"]', 30000)
-               .sleep(300).mouseMove(61, 17).click(0);
+    it('click: 选择2 ( //span[text()="选择2"], 17, 11, 0 )', async function(){
+        await driver.sleep(300).wait('//span[text()="选择2"]', 30000)
+               .sleep(300).mouseMove(17, 11).click(0);
     });
 
-    it('scrollTo: 0, 89', async function(){
-        await driver.scrollTo(0, 89);
+    it('click: 选择1 ( //span[text()="选择1"], 23, 13, 0 )', async function(){
+        await driver.sleep(300).wait('//span[text()="选择1"]', 30000)
+               .sleep(300).mouseMove(23, 13).click(0);
     });
 
-    it('click: 新增 ( //div[text()="新增"], 55, 14, 0 )', async function(){
-        await driver.sleep(300).wait('//div[text()="新增"]', 30000)
-               .sleep(300).mouseMove(55, 14).click(0);
+    it('click: 选择1 ( //span[text()="选择1"], 23, 13, 0 )', async function(){
+        await driver.sleep(300).wait('//span[text()="选择1"]', 30000)
+               .sleep(300).mouseMove(23, 13).click(0);
     });
 
-    it('scrollTo: 0, 142', async function(){
-        await driver.scrollTo(0, 142);
+    it('click: 选择2 ( //span[text()="选择2"], 22, 15, 0 )', async function(){
+        await driver.sleep(300).wait('//span[text()="选择2"]', 30000)
+               .sleep(300).mouseMove(22, 15).click(0);
     });
 
-    it('scrollTo: 0, 149', async function(){
-        await driver.scrollTo(0, 149);
+    it('click: 选择3 ( //span[text()="选择3"], 19, 15, 0 )', async function(){
+        await driver.sleep(300).wait('//span[text()="选择3"]', 30000)
+               .sleep(300).mouseMove(19, 15).click(0);
     });
 
-    it('click: 新增 ( //div[text()="新增"], 67, 21, 0 )', async function(){
-        await driver.sleep(300).wait('//div[text()="新增"]', 30000)
-               .sleep(300).mouseMove(67, 21).click(0);
-    });
-
-    it('click: 新增 ( //div[text()="新增"], 50, 16, 0 )', async function(){
-        await driver.sleep(300).wait('//div[text()="新增"]', 30000)
-               .sleep(300).mouseMove(50, 16).click(0);
-    });
-
-    it('click: div.ma-alert-success > i.icon-close, 6, 7, 0', async function(){
-        await driver.sleep(300).wait('div.ma-alert-success > i.icon-close', 30000)
-               .sleep(300).mouseMove(6, 7).click(0);
-    });
-
-    it('click: i.icon-close, 10, 11, 0', async function(){
-        await driver.sleep(300).wait('i.icon-close', 30000)
-               .sleep(300).mouseMove(10, 11).click(0);
+    it('click: 选择2 ( //span[text()="选择2"], 20, 13, 0 )', async function(){
+        await driver.sleep(300).wait('//span[text()="选择2"]', 30000)
+               .sleep(300).mouseMove(20, 13).click(0);
     });
 
     function _(str){

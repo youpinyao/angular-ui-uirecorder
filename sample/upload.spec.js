@@ -21,8 +21,8 @@ module.exports = function(){
         testVars = self.testVars;
     });
 
-    it('url: http://0.0.0.0:8686/#!/components/feedback/alert', async function(){
-        await driver.url(_(`http://0.0.0.0:8686/#!/components/feedback/alert`));
+    it('url: http://0.0.0.0:8686/#!/components/data-entry/upload', async function(){
+        await driver.url(_(`http://0.0.0.0:8686/#!/components/data-entry/upload`));
     });
 
     it('waitBody: ', async function(){
@@ -31,68 +31,23 @@ module.exports = function(){
         });
     });
 
-    it('scrollTo: 0, 142', async function(){
-        await driver.scrollTo(0, 142);
+    it('scrollTo: 0, 189', async function(){
+        await driver.scrollTo(0, 189);
     });
 
-    it('click: div.ma-alert-warning > i.icon-close, 9, 4, 0', async function(){
-        await driver.sleep(300).wait('div.ma-alert-warning > i.icon-close', 30000)
-               .sleep(300).mouseMove(9, 4).click(0);
+    it('click: div:nth-child(2) > div.upload-file-items > div[data-id="2"]:nth-child(2) > i.icon-close, 6, 5, 0', async function(){
+        await driver.sleep(300).wait('div:nth-child(2) > div.upload-file-items > div[data-id="2"]:nth-child(2) > i.icon-close', 30000)
+               .sleep(300).mouseMove(6, 5).click(0);
     });
 
-    it('scrollTo: 0, 89', async function(){
-        await driver.scrollTo(0, 89);
+    it('click: div[data-id="3"]:nth-child(2) > i.icon-close, 6, 5, 0', async function(){
+        await driver.sleep(300).wait('div[data-id="3"]:nth-child(2) > i.icon-close', 30000)
+               .sleep(300).mouseMove(6, 5).click(0);
     });
 
-    it('click: i.icon-close, 9, 11, 0', async function(){
-        await driver.sleep(300).wait('i.icon-close', 30000)
-               .sleep(300).mouseMove(9, 11).click(0);
-    });
-
-    it('scrollTo: 0, 29', async function(){
-        await driver.scrollTo(0, 29);
-    });
-
-    it('click: 新增 ( //div[text()="新增"], 61, 17, 0 )', async function(){
-        await driver.sleep(300).wait('//div[text()="新增"]', 30000)
-               .sleep(300).mouseMove(61, 17).click(0);
-    });
-
-    it('scrollTo: 0, 89', async function(){
-        await driver.scrollTo(0, 89);
-    });
-
-    it('click: 新增 ( //div[text()="新增"], 55, 14, 0 )', async function(){
-        await driver.sleep(300).wait('//div[text()="新增"]', 30000)
-               .sleep(300).mouseMove(55, 14).click(0);
-    });
-
-    it('scrollTo: 0, 142', async function(){
-        await driver.scrollTo(0, 142);
-    });
-
-    it('scrollTo: 0, 149', async function(){
-        await driver.scrollTo(0, 149);
-    });
-
-    it('click: 新增 ( //div[text()="新增"], 67, 21, 0 )', async function(){
-        await driver.sleep(300).wait('//div[text()="新增"]', 30000)
-               .sleep(300).mouseMove(67, 21).click(0);
-    });
-
-    it('click: 新增 ( //div[text()="新增"], 50, 16, 0 )', async function(){
-        await driver.sleep(300).wait('//div[text()="新增"]', 30000)
-               .sleep(300).mouseMove(50, 16).click(0);
-    });
-
-    it('click: div.ma-alert-success > i.icon-close, 6, 7, 0', async function(){
-        await driver.sleep(300).wait('div.ma-alert-success > i.icon-close', 30000)
-               .sleep(300).mouseMove(6, 7).click(0);
-    });
-
-    it('click: i.icon-close, 10, 11, 0', async function(){
-        await driver.sleep(300).wait('i.icon-close', 30000)
-               .sleep(300).mouseMove(10, 11).click(0);
+    it('click: div[data-id="2"] > div.handle-box > i.icon-eyeo, 14, 17, 0', async function(){
+        await driver.sleep(300).wait('div[data-id="2"] > div.handle-box > i.icon-eyeo', 30000)
+               .sleep(300).mouseMove(14, 17).click(0);
     });
 
     function _(str){

@@ -21,8 +21,8 @@ module.exports = function(){
         testVars = self.testVars;
     });
 
-    it('url: http://0.0.0.0:8686/#!/components/feedback/alert', async function(){
-        await driver.url(_(`http://0.0.0.0:8686/#!/components/feedback/alert`));
+    it('url: http://0.0.0.0:8686/#!/components/data-entry/transfer2', async function(){
+        await driver.url(_(`http://0.0.0.0:8686/#!/components/data-entry/transfer2`));
     });
 
     it('waitBody: ', async function(){
@@ -31,68 +31,88 @@ module.exports = function(){
         });
     });
 
-    it('scrollTo: 0, 142', async function(){
-        await driver.scrollTo(0, 142);
+    it('scrollTo: 0, 220', async function(){
+        await driver.scrollTo(0, 220);
     });
 
-    it('click: div.ma-alert-warning > i.icon-close, 9, 4, 0', async function(){
-        await driver.sleep(300).wait('div.ma-alert-warning > i.icon-close', 30000)
-               .sleep(300).mouseMove(9, 4).click(0);
+    it('click: i.switch-appearance, 25, 10, 0', async function(){
+        await driver.sleep(300).wait('i.switch-appearance', 30000)
+               .sleep(300).mouseMove(25, 10).click(0);
     });
 
-    it('scrollTo: 0, 89', async function(){
-        await driver.scrollTo(0, 89);
+    it('click: i.switch-appearance, 24, 13, 0', async function(){
+        await driver.sleep(300).wait('i.switch-appearance', 30000)
+               .sleep(300).mouseMove(24, 13).click(0);
     });
 
-    it('click: i.icon-close, 9, 11, 0', async function(){
-        await driver.sleep(300).wait('i.icon-close', 30000)
-               .sleep(300).mouseMove(9, 11).click(0);
+    it('click: li[data-value="120000"] > div.ui-select-choices-row-inner > div > i.tree-arrow-click, 9, 23, 0', async function(){
+        await driver.sleep(300).wait('li[data-value="120000"] > div.ui-select-choices-row-inner > div > i.tree-arrow-click', 30000)
+               .sleep(300).mouseMove(9, 23).click(0);
     });
 
-    it('scrollTo: 0, 29', async function(){
-        await driver.scrollTo(0, 29);
+    it('click: li.tree-level-1 > div.ui-select-choices-row-inner > div > i.tree-arrow-click, 16, 20, 0', async function(){
+        await driver.sleep(300).wait('li.tree-level-1 > div.ui-select-choices-row-inner > div > i.tree-arrow-click', 30000)
+               .sleep(300).mouseMove(16, 20).click(0);
     });
 
-    it('click: 新增 ( //div[text()="新增"], 61, 17, 0 )', async function(){
-        await driver.sleep(300).wait('//div[text()="新增"]', 30000)
-               .sleep(300).mouseMove(61, 17).click(0);
+    it('click: 天津 ( li[data-value="12010022"] > div.ui-select-choices-row-inner > div > label.ma-checkbox > span:nth-child(3), 26, 15, 0 )', async function(){
+        await driver.sleep(300).wait('li[data-value="12010022"] > div.ui-select-choices-row-inner > div > label.ma-checkbox > span:nth-child(3)', 30000)
+               .sleep(300).mouseMove(26, 15).click(0);
     });
 
-    it('scrollTo: 0, 89', async function(){
-        await driver.scrollTo(0, 89);
+    it('click: 添加 ( //span[text()="添加"], 16, 13, 0 )', async function(){
+        await driver.sleep(300).wait('//span[text()="添加"]', 30000)
+               .sleep(300).mouseMove(16, 13).click(0);
     });
 
-    it('click: 新增 ( //div[text()="新增"], 55, 14, 0 )', async function(){
-        await driver.sleep(300).wait('//div[text()="新增"]', 30000)
-               .sleep(300).mouseMove(55, 14).click(0);
+    it('click: div.ma-transfer-right-tree > div.custom-static-select > div.select2-display-none > ul.ng-scope > li[data-value="120000"]:nth-child(2) > div.ui-select-choices-row-inner > div > i.tree-arrow-click, 14, 14, 0', async function(){
+        await driver.sleep(300).wait('div.ma-transfer-right-tree > div.custom-static-select > div.select2-display-none > ul.ng-scope > li[data-value="120000"]:nth-child(2) > div.ui-select-choices-row-inner > div > i.tree-arrow-click', 30000)
+               .sleep(300).mouseMove(14, 14).click(0);
     });
 
-    it('scrollTo: 0, 142', async function(){
-        await driver.scrollTo(0, 142);
+    it('click: div.ma-transfer-right-tree > div.custom-static-select > div.select2-display-none > ul.ng-scope > li[data-value="120100"].tree-level-1 > div.ui-select-choices-row-inner > div > i.tree-arrow-click, 16, 22, 0', async function(){
+        await driver.sleep(300).wait('div.ma-transfer-right-tree > div.custom-static-select > div.select2-display-none > ul.ng-scope > li[data-value="120100"].tree-level-1 > div.ui-select-choices-row-inner > div > i.tree-arrow-click', 30000)
+               .sleep(300).mouseMove(16, 22).click(0);
     });
 
-    it('scrollTo: 0, 149', async function(){
-        await driver.scrollTo(0, 149);
+    it('click: 天津 ( li[data-value="12010011"] > div.ui-select-choices-row-inner > div > label.ma-checkbox > span:nth-child(3), 20, 7, 0 )', async function(){
+        await driver.sleep(300).wait('li[data-value="12010011"] > div.ui-select-choices-row-inner > div > label.ma-checkbox > span:nth-child(3)', 30000)
+               .sleep(300).mouseMove(20, 7).click(0);
     });
 
-    it('click: 新增 ( //div[text()="新增"], 67, 21, 0 )', async function(){
-        await driver.sleep(300).wait('//div[text()="新增"]', 30000)
-               .sleep(300).mouseMove(67, 21).click(0);
+    it('click: 添加 ( //span[text()="添加"], 17, 11, 0 )', async function(){
+        await driver.sleep(300).wait('//span[text()="添加"]', 30000)
+               .sleep(300).mouseMove(17, 11).click(0);
     });
 
-    it('click: 新增 ( //div[text()="新增"], 50, 16, 0 )', async function(){
-        await driver.sleep(300).wait('//div[text()="新增"]', 30000)
-               .sleep(300).mouseMove(50, 16).click(0);
+    it('click: 天津 ( li[data-value="12010011"] > div.ui-select-choices-row-inner > div > label.ma-checkbox > span:nth-child(3), 19, 14, 0 )', async function(){
+        await driver.sleep(300).wait('li[data-value="12010011"] > div.ui-select-choices-row-inner > div > label.ma-checkbox > span:nth-child(3)', 30000)
+               .sleep(300).mouseMove(19, 14).click(0);
     });
 
-    it('click: div.ma-alert-success > i.icon-close, 6, 7, 0', async function(){
-        await driver.sleep(300).wait('div.ma-alert-success > i.icon-close', 30000)
-               .sleep(300).mouseMove(6, 7).click(0);
+    it('click: 删除 ( //span[text()="删除"], 11, 15, 0 )', async function(){
+        await driver.sleep(300).wait('//span[text()="删除"]', 30000)
+               .sleep(300).mouseMove(11, 15).click(0);
     });
 
-    it('click: i.icon-close, 10, 11, 0', async function(){
-        await driver.sleep(300).wait('i.icon-close', 30000)
-               .sleep(300).mouseMove(10, 11).click(0);
+    it('click: div.ma-transfer-left-result > label.ng-not-empty > i.ma-checkbox-appearance, 11, 8, 0', async function(){
+        await driver.sleep(300).wait('div.ma-transfer-left-result > label.ng-not-empty > i.ma-checkbox-appearance', 30000)
+               .sleep(300).mouseMove(11, 8).click(0);
+    });
+
+    it('click: 添加 ( div.mb-20 > div.ma-button, 17, 23, 0 )', async function(){
+        await driver.sleep(300).wait('div.mb-20 > div.ma-button', 30000)
+               .sleep(300).mouseMove(17, 23).click(0);
+    });
+
+    it('click: div.ma-transfer-right-result > label.ng-not-empty > i.ma-checkbox-appearance, 9, 10, 0', async function(){
+        await driver.sleep(300).wait('div.ma-transfer-right-result > label.ng-not-empty > i.ma-checkbox-appearance', 30000)
+               .sleep(300).mouseMove(9, 10).click(0);
+    });
+
+    it('click: 删除 ( //span[text()="删除"], 18, 17, 0 )', async function(){
+        await driver.sleep(300).wait('//span[text()="删除"]', 30000)
+               .sleep(300).mouseMove(18, 17).click(0);
     });
 
     function _(str){

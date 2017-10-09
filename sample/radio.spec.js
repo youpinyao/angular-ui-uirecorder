@@ -21,8 +21,8 @@ module.exports = function(){
         testVars = self.testVars;
     });
 
-    it('url: http://0.0.0.0:8686/#!/components/feedback/alert', async function(){
-        await driver.url(_(`http://0.0.0.0:8686/#!/components/feedback/alert`));
+    it('url: http://0.0.0.0:8686/#!/components/data-entry/radio', async function(){
+        await driver.url(_(`http://0.0.0.0:8686/#!/components/data-entry/radio`));
     });
 
     it('waitBody: ', async function(){
@@ -31,68 +31,39 @@ module.exports = function(){
         });
     });
 
-    it('scrollTo: 0, 142', async function(){
-        await driver.scrollTo(0, 142);
+    it('click: Toggle disabled fals... ( div.ma-button, 120, 20, 0 )', async function(){
+        await driver.sleep(300).wait('div.ma-button', 30000)
+               .sleep(300).mouseMove(120, 20).click(0);
     });
 
-    it('click: div.ma-alert-warning > i.icon-close, 9, 4, 0', async function(){
-        await driver.sleep(300).wait('div.ma-alert-warning > i.icon-close', 30000)
-               .sleep(300).mouseMove(9, 4).click(0);
+    it('click: Toggle disabled true... ( div.ma-button, 120, 20, 0 )', async function(){
+        await driver.sleep(300).wait('div.ma-button', 30000)
+               .sleep(300).mouseMove(120, 20).click(0);
     });
 
-    it('scrollTo: 0, 89', async function(){
-        await driver.scrollTo(0, 89);
+    it('click: 选择2 ( //span[text()="选择2"], 7, 19, 0 )', async function(){
+        await driver.sleep(300).wait('//span[text()="选择2"]', 30000)
+               .sleep(300).mouseMove(7, 19).click(0);
     });
 
-    it('click: i.icon-close, 9, 11, 0', async function(){
-        await driver.sleep(300).wait('i.icon-close', 30000)
-               .sleep(300).mouseMove(9, 11).click(0);
+    it('click: label[name="selectRadio"][value="3"] > i.radio-appearance, 12, 7, 0', async function(){
+        await driver.sleep(300).wait('label[name="selectRadio"][value="3"] > i.radio-appearance', 30000)
+               .sleep(300).mouseMove(12, 7).click(0);
     });
 
-    it('scrollTo: 0, 29', async function(){
-        await driver.scrollTo(0, 29);
+    it('click: 选择1 ( //span[text()="选择1"], 24, 7, 0 )', async function(){
+        await driver.sleep(300).wait('//span[text()="选择1"]', 30000)
+               .sleep(300).mouseMove(24, 7).click(0);
     });
 
-    it('click: 新增 ( //div[text()="新增"], 61, 17, 0 )', async function(){
-        await driver.sleep(300).wait('//div[text()="新增"]', 30000)
-               .sleep(300).mouseMove(61, 17).click(0);
+    it('click: Toggle disabled fals... ( div.ma-button, 69, 19, 0 )', async function(){
+        await driver.sleep(300).wait('div.ma-button', 30000)
+               .sleep(300).mouseMove(69, 19).click(0);
     });
 
-    it('scrollTo: 0, 89', async function(){
-        await driver.scrollTo(0, 89);
-    });
-
-    it('click: 新增 ( //div[text()="新增"], 55, 14, 0 )', async function(){
-        await driver.sleep(300).wait('//div[text()="新增"]', 30000)
-               .sleep(300).mouseMove(55, 14).click(0);
-    });
-
-    it('scrollTo: 0, 142', async function(){
-        await driver.scrollTo(0, 142);
-    });
-
-    it('scrollTo: 0, 149', async function(){
-        await driver.scrollTo(0, 149);
-    });
-
-    it('click: 新增 ( //div[text()="新增"], 67, 21, 0 )', async function(){
-        await driver.sleep(300).wait('//div[text()="新增"]', 30000)
-               .sleep(300).mouseMove(67, 21).click(0);
-    });
-
-    it('click: 新增 ( //div[text()="新增"], 50, 16, 0 )', async function(){
-        await driver.sleep(300).wait('//div[text()="新增"]', 30000)
-               .sleep(300).mouseMove(50, 16).click(0);
-    });
-
-    it('click: div.ma-alert-success > i.icon-close, 6, 7, 0', async function(){
-        await driver.sleep(300).wait('div.ma-alert-success > i.icon-close', 30000)
-               .sleep(300).mouseMove(6, 7).click(0);
-    });
-
-    it('click: i.icon-close, 10, 11, 0', async function(){
-        await driver.sleep(300).wait('i.icon-close', 30000)
-               .sleep(300).mouseMove(10, 11).click(0);
+    it('click: Toggle disabled true... ( div.ma-button, 69, 19, 0 )', async function(){
+        await driver.sleep(300).wait('div.ma-button', 30000)
+               .sleep(300).mouseMove(69, 19).click(0);
     });
 
     function _(str){

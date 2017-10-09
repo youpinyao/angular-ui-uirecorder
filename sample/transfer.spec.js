@@ -21,8 +21,8 @@ module.exports = function(){
         testVars = self.testVars;
     });
 
-    it('url: http://0.0.0.0:8686/#!/components/feedback/alert', async function(){
-        await driver.url(_(`http://0.0.0.0:8686/#!/components/feedback/alert`));
+    it('url: http://0.0.0.0:8686/#!/components/data-entry/transfer', async function(){
+        await driver.url(_(`http://0.0.0.0:8686/#!/components/data-entry/transfer`));
     });
 
     it('waitBody: ', async function(){
@@ -31,68 +31,77 @@ module.exports = function(){
         });
     });
 
-    it('scrollTo: 0, 142', async function(){
-        await driver.scrollTo(0, 142);
+    it('scrollTo: 0, 183', async function(){
+        await driver.scrollTo(0, 183);
     });
 
-    it('click: div.ma-alert-warning > i.icon-close, 9, 4, 0', async function(){
-        await driver.sleep(300).wait('div.ma-alert-warning > i.icon-close', 30000)
-               .sleep(300).mouseMove(9, 4).click(0);
+    it('click: i.switch-appearance, 24, 10, 0', async function(){
+        await driver.sleep(300).wait('i.switch-appearance', 30000)
+               .sleep(300).mouseMove(24, 10).click(0);
     });
 
-    it('scrollTo: 0, 89', async function(){
-        await driver.scrollTo(0, 89);
+    it('click: i.switch-appearance, 24, 10, 0', async function(){
+        await driver.sleep(300).wait('i.switch-appearance', 30000)
+               .sleep(300).mouseMove(24, 10).click(0);
     });
 
-    it('click: i.icon-close, 9, 11, 0', async function(){
-        await driver.sleep(300).wait('i.icon-close', 30000)
-               .sleep(300).mouseMove(9, 11).click(0);
+    it('click: 66662 ( div:nth-child(1) > div.ma-select > div.ma-dropdown > div.show > div.ma-dropdown-container-content > div:nth-child(3), 57, 11, 0 )', async function(){
+        await driver.sleep(300).wait('div:nth-child(1) > div.ma-select > div.ma-dropdown > div.show > div.ma-dropdown-container-content > div:nth-child(3)', 30000)
+               .sleep(300).mouseMove(57, 11).click(0);
     });
 
-    it('scrollTo: 0, 29', async function(){
-        await driver.scrollTo(0, 29);
+    it('click: 66664 ( div:nth-child(1) > div.ma-select > div.ma-dropdown > div.show > div.ma-dropdown-container-content > div:nth-child(5), 82, 22, 0 )', async function(){
+        await driver.sleep(300).wait('div:nth-child(1) > div.ma-select > div.ma-dropdown > div.show > div.ma-dropdown-container-content > div:nth-child(5)', 30000)
+               .sleep(300).mouseMove(82, 22).click(0);
     });
 
-    it('click: 新增 ( //div[text()="新增"], 61, 17, 0 )', async function(){
-        await driver.sleep(300).wait('//div[text()="新增"]', 30000)
-               .sleep(300).mouseMove(61, 17).click(0);
+    it('click: 添加 ( div.mb-20 > div.ma-transfer > div.ma-transfer-center > div.mb-20 > div.ma-button > span.ng-scope, 6, 9, 0 )', async function(){
+        await driver.sleep(300).wait('div.mb-20 > div.ma-transfer > div.ma-transfer-center > div.mb-20 > div.ma-button > span.ng-scope', 30000)
+               .sleep(300).mouseMove(6, 9).click(0);
     });
 
-    it('scrollTo: 0, 89', async function(){
-        await driver.scrollTo(0, 89);
+    it('click: 66664 ( div:nth-child(3) > div.ma-select > div.ma-dropdown > div.show > div.ma-dropdown-container-content > div:nth-child(5), 69, 14, 0 )', async function(){
+        await driver.sleep(300).wait('div:nth-child(3) > div.ma-select > div.ma-dropdown > div.show > div.ma-dropdown-container-content > div:nth-child(5)', 30000)
+               .sleep(300).mouseMove(69, 14).click(0);
     });
 
-    it('click: 新增 ( //div[text()="新增"], 55, 14, 0 )', async function(){
-        await driver.sleep(300).wait('//div[text()="新增"]', 30000)
-               .sleep(300).mouseMove(55, 14).click(0);
+    it('click: 66662 ( div:nth-child(3) > div.ma-select > div.ma-dropdown > div.show > div.ma-dropdown-container-content > div:nth-child(3), 69, 17, 0 )', async function(){
+        await driver.sleep(300).wait('div:nth-child(3) > div.ma-select > div.ma-dropdown > div.show > div.ma-dropdown-container-content > div:nth-child(3)', 30000)
+               .sleep(300).mouseMove(69, 17).click(0);
     });
 
-    it('scrollTo: 0, 142', async function(){
-        await driver.scrollTo(0, 142);
+    it('click: 删除 ( div.mb-20 > div.ma-transfer > div.ma-transfer-center > div:nth-child(2) > div.ma-button, 19, 13, 0 )', async function(){
+        await driver.sleep(300).wait('div.mb-20 > div.ma-transfer > div.ma-transfer-center > div:nth-child(2) > div.ma-button', 30000)
+               .sleep(300).mouseMove(19, 13).click(0);
     });
 
-    it('scrollTo: 0, 149', async function(){
-        await driver.scrollTo(0, 149);
+    it('click: div.mb-20 > div.ma-transfer > div:nth-child(1) > div.ma-transfer-left-result > label.ng-not-empty > i.ma-checkbox-appearance, 0, 9, 0', async function(){
+        await driver.sleep(300).wait('div.mb-20 > div.ma-transfer > div:nth-child(1) > div.ma-transfer-left-result > label.ng-not-empty > i.ma-checkbox-appearance', 30000)
+               .sleep(300).mouseMove(0, 9).click(0);
     });
 
-    it('click: 新增 ( //div[text()="新增"], 67, 21, 0 )', async function(){
-        await driver.sleep(300).wait('//div[text()="新增"]', 30000)
-               .sleep(300).mouseMove(67, 21).click(0);
+    it('click: 添加 ( div.mb-20 > div.ma-transfer > div.ma-transfer-center > div.mb-20 > div.ma-button > span.ng-scope, 24, 8, 0 )', async function(){
+        await driver.sleep(300).wait('div.mb-20 > div.ma-transfer > div.ma-transfer-center > div.mb-20 > div.ma-button > span.ng-scope', 30000)
+               .sleep(300).mouseMove(24, 8).click(0);
     });
 
-    it('click: 新增 ( //div[text()="新增"], 50, 16, 0 )', async function(){
-        await driver.sleep(300).wait('//div[text()="新增"]', 30000)
-               .sleep(300).mouseMove(50, 16).click(0);
+    it('click: 0/7 项 选中 ( div.mb-20 > div.ma-transfer > div:nth-child(3) > div.ma-transfer-right-result, 10, 19, 0 )', async function(){
+        await driver.sleep(300).wait('div.mb-20 > div.ma-transfer > div:nth-child(3) > div.ma-transfer-right-result', 30000)
+               .sleep(300).mouseMove(10, 19).click(0);
     });
 
-    it('click: div.ma-alert-success > i.icon-close, 6, 7, 0', async function(){
-        await driver.sleep(300).wait('div.ma-alert-success > i.icon-close', 30000)
-               .sleep(300).mouseMove(6, 7).click(0);
+    it('click: div.mb-20 > div.ma-transfer > div:nth-child(3) > div.ma-transfer-right-result > label.ng-not-empty > i.ma-checkbox-appearance, 4, 14, 0', async function(){
+        await driver.sleep(300).wait('div.mb-20 > div.ma-transfer > div:nth-child(3) > div.ma-transfer-right-result > label.ng-not-empty > i.ma-checkbox-appearance', 30000)
+               .sleep(300).mouseMove(4, 14).click(0);
     });
 
-    it('click: i.icon-close, 10, 11, 0', async function(){
-        await driver.sleep(300).wait('i.icon-close', 30000)
-               .sleep(300).mouseMove(10, 11).click(0);
+    it('click: 删除 ( div.mb-20 > div.ma-transfer > div.ma-transfer-center > div:nth-child(2) > div.ma-button > span.ng-scope, 3, 3, 0 )', async function(){
+        await driver.sleep(300).wait('div.mb-20 > div.ma-transfer > div.ma-transfer-center > div:nth-child(2) > div.ma-button > span.ng-scope', 30000)
+               .sleep(300).mouseMove(3, 3).click(0);
+    });
+
+    it('scrollTo: 0, 303', async function(){
+        await driver.scrollTo(0, 303);
     });
 
     function _(str){
@@ -177,7 +186,7 @@ function runThisSpec(){
                 else if(hosts){
                     sessionConfig.hosts = hosts;
                 }
-                self.driver = driver.session(sessionConfig).windowSize(1366, 768).config({
+                self.driver = driver.session(sessionConfig).windowSize(1920, 1080).config({
                     pageloadTimeout: 30000, // page onload timeout
                     scriptTimeout: 5000, // sync script timeout
                     asyncScriptTimeout: 10000 // async script timeout

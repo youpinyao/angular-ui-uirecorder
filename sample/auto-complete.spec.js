@@ -21,8 +21,8 @@ module.exports = function(){
         testVars = self.testVars;
     });
 
-    it('url: http://0.0.0.0:8686/#!/components/feedback/alert', async function(){
-        await driver.url(_(`http://0.0.0.0:8686/#!/components/feedback/alert`));
+    it('url: http://0.0.0.0:8686/#!/components/data-entry/autoComplete', async function(){
+        await driver.url(_(`http://0.0.0.0:8686/#!/components/data-entry/autoComplete`));
     });
 
     it('waitBody: ', async function(){
@@ -31,68 +31,86 @@ module.exports = function(){
         });
     });
 
-    it('scrollTo: 0, 142', async function(){
-        await driver.scrollTo(0, 142);
+    it('mouseDown: div:nth-child(1) > div:nth-child(2) > div.ma-auto-complete > div:nth-child(1) > input[type="text"]:nth-child(1), 186, 10, 0', async function(){
+        await driver.sleep(300).wait('div:nth-child(1) > div:nth-child(2) > div.ma-auto-complete > div:nth-child(1) > input[type="text"]:nth-child(1)', 30000)
+               .sleep(300).mouseMove(186, 10).mouseDown(0);
     });
 
-    it('click: div.ma-alert-warning > i.icon-close, 9, 4, 0', async function(){
-        await driver.sleep(300).wait('div.ma-alert-warning > i.icon-close', 30000)
-               .sleep(300).mouseMove(9, 4).click(0);
+    it('mouseUp: div:nth-child(1) > div:nth-child(2) > div.ma-auto-complete > div:nth-child(1), 186, 10, 0', async function(){
+        await driver.sleep(300).wait('div:nth-child(1) > div:nth-child(2) > div.ma-auto-complete > div:nth-child(1)', 30000)
+               .sleep(300).mouseMove(186, 10).mouseMove(186, 10).mouseUp(0);
     });
 
-    it('scrollTo: 0, 89', async function(){
-        await driver.scrollTo(0, 89);
+    it('click: 6661 ( div.ma-dropdown-container-content > div:nth-child(2), 73, 24, 0 )', async function(){
+        await driver.sleep(300).wait('div.ma-dropdown-container-content > div:nth-child(2)', 30000)
+               .sleep(300).mouseMove(73, 24).click(0);
     });
 
-    it('click: i.icon-close, 9, 11, 0', async function(){
-        await driver.sleep(300).wait('i.icon-close', 30000)
-               .sleep(300).mouseMove(9, 11).click(0);
+    it('click: input.ng-touched, 107, 16, 0', async function(){
+        await driver.sleep(300).wait('input.ng-touched', 30000)
+               .sleep(300).mouseMove(107, 16).click(0);
     });
 
-    it('scrollTo: 0, 29', async function(){
-        await driver.scrollTo(0, 29);
+    it('click: 6661 ( div.show > div.ma-dropdown-container-content > div:nth-child(2), 95, 6, 0 )', async function(){
+        await driver.sleep(300).wait('div.show > div.ma-dropdown-container-content > div:nth-child(2)', 30000)
+               .sleep(300).mouseMove(95, 6).click(0);
     });
 
-    it('click: 新增 ( //div[text()="新增"], 61, 17, 0 )', async function(){
-        await driver.sleep(300).wait('//div[text()="新增"]', 30000)
-               .sleep(300).mouseMove(61, 17).click(0);
+    it('click: input.ng-touched, 105, 24, 0', async function(){
+        await driver.sleep(300).wait('input.ng-touched', 30000)
+               .sleep(300).mouseMove(105, 24).click(0);
     });
 
-    it('scrollTo: 0, 89', async function(){
-        await driver.scrollTo(0, 89);
+    it('sendKeys: 23123', async function(){
+        await driver.sendKeys('23123');
     });
 
-    it('click: 新增 ( //div[text()="新增"], 55, 14, 0 )', async function(){
-        await driver.sleep(300).wait('//div[text()="新增"]', 30000)
-               .sleep(300).mouseMove(55, 14).click(0);
+    it('click: 6660 ( div.show > div.ma-dropdown-container-content > div:nth-child(1), 88, 13, 0 )', async function(){
+        await driver.sleep(300).wait('div.show > div.ma-dropdown-container-content > div:nth-child(1)', 30000)
+               .sleep(300).mouseMove(88, 13).click(0);
     });
 
-    it('scrollTo: 0, 142', async function(){
-        await driver.scrollTo(0, 142);
+    it('click: input.ng-pristine, 96, 17, 0', async function(){
+        await driver.sleep(300).wait('input.ng-pristine', 30000)
+               .sleep(300).mouseMove(96, 17).click(0);
     });
 
-    it('scrollTo: 0, 149', async function(){
-        await driver.scrollTo(0, 149);
+    it('click: 66601 ( div.show > div.ma-dropdown-container-content > div:nth-child(2), 92, 22, 0 )', async function(){
+        await driver.sleep(300).wait('div.show > div.ma-dropdown-container-content > div:nth-child(2)', 30000)
+               .sleep(300).mouseMove(92, 22).click(0);
     });
 
-    it('click: 新增 ( //div[text()="新增"], 67, 21, 0 )', async function(){
-        await driver.sleep(300).wait('//div[text()="新增"]', 30000)
-               .sleep(300).mouseMove(67, 21).click(0);
+    it('click: input.ng-pristine, 94, 17, 0', async function(){
+        await driver.sleep(300).wait('input.ng-pristine', 30000)
+               .sleep(300).mouseMove(94, 17).click(0);
     });
 
-    it('click: 新增 ( //div[text()="新增"], 50, 16, 0 )', async function(){
-        await driver.sleep(300).wait('//div[text()="新增"]', 30000)
-               .sleep(300).mouseMove(50, 16).click(0);
+    it('sendKeys: 33312', async function(){
+        await driver.sendKeys('33312');
     });
 
-    it('click: div.ma-alert-success > i.icon-close, 6, 7, 0', async function(){
-        await driver.sleep(300).wait('div.ma-alert-success > i.icon-close', 30000)
-               .sleep(300).mouseMove(6, 7).click(0);
+    it('click: 66601333123 ( div.show > div.ma-dropdown-container-content > div:nth-child(4), 121, 7, 0 )', async function(){
+        await driver.sleep(300).wait('div.show > div.ma-dropdown-container-content > div:nth-child(4)', 30000)
+               .sleep(300).mouseMove(121, 7).click(0);
     });
 
-    it('click: i.icon-close, 10, 11, 0', async function(){
-        await driver.sleep(300).wait('i.icon-close', 30000)
-               .sleep(300).mouseMove(10, 11).click(0);
+    it('mouseDown: div:nth-child(2) > div:nth-child(2) > div.ma-auto-complete > div:nth-child(1) > input[type="text"].ng-dirty, 112.5, 19, 0', async function(){
+        await driver.sleep(300).wait('div:nth-child(2) > div:nth-child(2) > div.ma-auto-complete > div:nth-child(1) > input[type="text"].ng-dirty', 30000)
+               .sleep(300).mouseMove(112.5, 19).mouseDown(0);
+    });
+
+    it('mouseUp: div:nth-child(2) > div:nth-child(2) > div.ma-auto-complete > div:nth-child(1), 113, 19, 0', async function(){
+        await driver.sleep(300).wait('div:nth-child(2) > div:nth-child(2) > div.ma-auto-complete > div:nth-child(1)', 30000)
+               .sleep(300).mouseMove(113, 19).mouseMove(113, 19).mouseUp(0);
+    });
+
+    it('sendKeys: {BACK_SPACE}{BACK_SPACE}{BACK_SPACE}{BACK_SPACE}{BACK_SPACE}{BACK_SPACE}{BACK_SPACE}', async function(){
+        await driver.sendKeys('{BACK_SPACE}{BACK_SPACE}{BACK_SPACE}{BACK_SPACE}{BACK_SPACE}{BACK_SPACE}{BACK_SPACE}');
+    });
+
+    it('click: 66602 ( div.show > div.ma-dropdown-container-content > div:nth-child(3), 77, 16, 0 )', async function(){
+        await driver.sleep(300).wait('div.show > div.ma-dropdown-container-content > div:nth-child(3)', 30000)
+               .sleep(300).mouseMove(77, 16).click(0);
     });
 
     function _(str){
