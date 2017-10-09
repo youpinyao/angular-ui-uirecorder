@@ -2,6 +2,9 @@
 test case recorder
 
 ---
+node 版本必须>= 7.0
+
+---
 
 ### 使用文档
 [https://github.com/alibaba/uirecorder/blob/master/README_zh-cn.md](https://github.com/alibaba/uirecorder/blob/master/README_zh-cn.md)
